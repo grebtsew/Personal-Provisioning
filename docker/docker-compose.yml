@@ -1,0 +1,125 @@
+version: '3.8'
+
+networks:
+  hive:
+    driver: bridge
+
+volumes:
+    prometheus_data: {}
+    grafana_data: {}
+
+services:
+
+  prometheus:
+    image: prom/prometheus:v2.28.1
+    container_name: prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    restart: unless-stopped
+    ports:
+      - '9090:9090'
+    networks:
+      - hive
+    labels:
+      org.label-schema.group: "monitoring"
+
+  nodeexporter:
+    image: prom/node-exporter:v1.2.0
+    container_name: nodeexporter
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.rootfs=/rootfs'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
+    restart: unless-stopped
+    ports:
+      - '9100:9100'
+    networks:
+      - hive
+    labels:
+      org.label-schema.group: "monitoring"
+   
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.40.0
+    container_name: cadvisor
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker:/var/lib/docker:ro
+      - "/var/run/docker.sock:/var/run/docker.sock:rw" # linux
+      - "/usr/local/bin/docker:/usr/bin/docker:rw"  # windows
+    restart: unless-stopped
+    ports:
+      - '9092:8080'
+    networks:
+      - hive
+    labels:
+      org.label-schema.group: "monitoring"
+    
+
+  grafana:
+    image: grafana/grafana:8.0.3
+    container_name: grafana
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+      - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    networks:
+      - hive
+    labels:
+      org.label-schema.group: "monitoring"
+    
+
+  pushgateway:
+    image: prom/pushgateway:v1.4.1
+    container_name: pushgateway
+    restart: unless-stopped
+    ports:
+      - '9091:9091'
+    networks:
+      - hive
+    labels:
+      org.label-schema.group: "monitoring"
+
+
+  weavescope:
+    container_name: weavescope
+    image: weaveworks/scope:master-5373b5ea # current latest, working!
+    privileged: true
+    pid: host
+    ports:
+      - '4040:4040'
+    labels:
+      - "works.weave.role=system"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:rw" # linux
+      - "/usr/local/bin/docker:/usr/bin/docker:rw"  # windows
+    command:
+      - "--probe.docker=true"
+      #- "--weave=false"
+    restart: unless-stopped
+    networks:
+      - hive
+    labels:
+      org.label-schema.group: "monitoring"
