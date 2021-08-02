@@ -1,7 +1,7 @@
 version: '3.8'
 
 networks:
-  hive:
+  monitoring:
     driver: bridge
 
 volumes:
@@ -27,7 +27,7 @@ services:
     ports:
       - '9090:9090'
     networks:
-      - hive
+      - monitoring
     labels:
       org.label-schema.group: "monitoring"
 
@@ -47,7 +47,7 @@ services:
     ports:
       - '9100:9100'
     networks:
-      - hive
+      - monitoring
     labels:
       org.label-schema.group: "monitoring"
    
@@ -66,7 +66,7 @@ services:
     ports:
       - '9092:8080'
     networks:
-      - hive
+      - monitoring
     labels:
       org.label-schema.group: "monitoring"
     
@@ -86,7 +86,7 @@ services:
     ports:
       - '3000:3000'
     networks:
-      - hive
+      - monitoring
     labels:
       org.label-schema.group: "monitoring"
     
@@ -98,7 +98,7 @@ services:
     ports:
       - '9091:9091'
     networks:
-      - hive
+      - monitoring
     labels:
       org.label-schema.group: "monitoring"
 
@@ -120,6 +120,6 @@ services:
       #- "--weave=false"
     restart: unless-stopped
     networks:
-      - hive
+      - monitoring
     labels:
       org.label-schema.group: "monitoring"
