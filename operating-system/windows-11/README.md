@@ -1,4 +1,8 @@
-# HOW-TO
+# Windows 11
+
+## Setup windows environment using Choco
+
+### HOW-TO
 
 Run these commando:s
 
@@ -11,6 +15,10 @@ start-process PowerShell -verb runas
 
 #install in admin mode
 ./wininstall_choco_list/install_programs.ps1
+
+#if wanted, setup workspace after this
+
+#if wanted, setup profile data from /profiles after this
 
 # dont forget to remove remote signed scripts!
 Set-ExecutionPolicy RemoteSigned
