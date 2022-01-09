@@ -1,0 +1,17 @@
+esbenp.prettier-vscode
+s3gf4ult.monokai-vibrant
+ritwickdey.liveserver
+ms-vscode-remote.remote-ssh
+ms-azuretools.vscode-docker
+cobaltblu27.rainbow-highlighter
+vscode-icons-team.vscode-icons
+shan.code-settings-sync
+coenraads.bracket-pair-colorizer
+formulahendry.auto-rename-tag
+eamodio.gitlens
+formulahendry.code-runner
+kamikillerto.vscode-colorize
+streetsidesoftware.code-spell-checker
+wayou.vscode-todo-highlight
+christian-kohler.path-intellisense
+formulahendry.code-runner
