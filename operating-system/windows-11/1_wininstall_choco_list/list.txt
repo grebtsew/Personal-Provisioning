@@ -26,3 +26,6 @@ python3.8.9
 utorrent
 zoom
 teams
+opencv
+gstreamer
+wsl-ubuntu-2004
