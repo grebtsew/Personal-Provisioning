@@ -1,8 +1,7 @@
 code --list-extensions
 
-foreach($line in get-content list.txt) {code --install-extension $($line)}
-
-# Might want these also
-# copilot
-# c++
-# python
+cat list.txt | while read line 
+do
+  echo $line
+    code --install-extension $line
+done

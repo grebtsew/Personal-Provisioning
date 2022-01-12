@@ -18,7 +18,6 @@ emacs
 unityhub
 7zip.install
 Slack
-FortiClient
 wsl2
 Visual Studio
 expressVPN
