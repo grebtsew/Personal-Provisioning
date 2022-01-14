@@ -1,1 +1,0 @@
-# SSH into proxmox and install configs
