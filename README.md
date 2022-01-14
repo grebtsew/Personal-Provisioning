@@ -1,5 +1,9 @@
 # Personal-Provisioning
- Create and store personal provisioning to optimize development and reinstallations.
+ Create and store personal provisioning to optimize development and reinstallations of computers.
+ If you are installing new operating systems or getting new computers often for whatever reason it is a drag 
+ to always reinstall all programs and fix all settings. I created this repository to speed up the process,
+ it is helpful for me, and hopefully it can be helpful for more people out there. 
+ Let me know if you want more functions och have any questions.
 
  The folder `profile` contains profiles and settings used for different programs.
 
@@ -15,6 +19,8 @@
  3. Install for your OS, follow instructions in readme files, and take a coffee once the installations start.
 
  4. Done! You just saved hours of setup.
+
+**NOTE:** If you are installing on a system with old HDD or drives, you can store this repo there while reinstalling.
 
  # Operating System Status
 These tables describe which functionality currently is working on which OS.
@@ -76,3 +82,8 @@ These tables describe which functionality currently is working on which OS.
 
    </tbody>
 </table>
+
+
+# License
+
+This project is using a [Mit License](./LICENSE)
