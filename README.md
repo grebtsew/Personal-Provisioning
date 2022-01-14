@@ -38,17 +38,17 @@ These tables describe which functionality currently is working on which OS.
       <tr>
          <td>Ubuntu-20.04</td>
          <td>Pass</td>
-         <td>Fail</td>
+         <td>Pass</td>
          <td>Pass</td>
       </tr>
       <tr>
-         <td>Windows-10</td>
+         <td>MacOS</td>
          <td>Fail</td>
          <td>Fail</td>
          <td>Fail</td>
       </tr>
       <tr>
-         <td>MacOS</td>
+         <td>Windows-10</td>
          <td>Fail</td>
          <td>Fail</td>
          <td>Fail</td>
@@ -63,6 +63,7 @@ These tables describe which functionality currently is working on which OS.
          <th>Server Operating System</th>
          <th>Setup</th>
          <th>Backup</th>
+         <th>Utility</th>
       </tr>
    </thead>
    <tbody>
@@ -70,6 +71,7 @@ These tables describe which functionality currently is working on which OS.
          <td>Proxmox 7.1</td>
          <td>Fail</td>
          <td>Fail</td>
+         <td>Pass</td>
       </tr>
 
    </tbody>

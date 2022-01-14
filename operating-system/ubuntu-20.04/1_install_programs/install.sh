@@ -35,6 +35,7 @@ snap install --classic slack
 # snap
 snap install discord 
 snap install vlc 
+snap install spotify
 
 # apt-get
 apt-get install ffmpeg
