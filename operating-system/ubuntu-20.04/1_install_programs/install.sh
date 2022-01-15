@@ -42,6 +42,7 @@ apt-get install ffmpeg
 apt-get install vim
 apt-get install python3.8 
 apt-get install python3-pip
+apt-get install sshpass
 
 # Docker
 apt-get install docker-ce
