@@ -42,8 +42,22 @@ These files are backed up:
 /etc/modprobe.d/kvm-intel.conf
 ```
 
+On windows run `./backup.bat`
+
+On linux run `./backup.sh`
 
 # AutoSetup
 Run this script to setup an existing proxmox system. 
 This is very specific for my hardware but might be useful for speedier setup!
 
+On windows run `./setup.bat`
+
+On linux run `./setup.sh`
+
+Use the reset scripts to reset proxmox to previous settings.
+
+On windows run `./reset.bat`
+
+On linux run `./reset.sh`
+
+**NOTE:** These scripts might make proxmox stop working. I recommend entering safe mode and reseting eventuall problems using the added python scripts. 
