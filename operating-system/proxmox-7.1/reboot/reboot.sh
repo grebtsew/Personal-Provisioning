@@ -1,4 +1,6 @@
-$IP=192.168.2.225
+echo "This script will reboot pve node and auto switch reboot os for you!"
+echo "Use <vm id> as argument!"
+$IP="192.168.2.225"
 echo -n Password: 
 read -s password
 
