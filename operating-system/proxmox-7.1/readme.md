@@ -9,11 +9,24 @@ With setup scripts and backup scripts.
 **NOTE:** Remember that all settings are hardware dependent! This will probably not work on other pcs.
 
 # AutoReboot and switch VM boot host
-Run this script in a VM to boot next one. Read more in folder README file.
+Run this script in a VM to reboot with new vm id. Read more in folder README file.
 
-On windows run ./reboot.bat <vmIDtoBoot>
-On linux run ./reboot.sh <vmIDtoBoot>
+On windows run 
+`./reboot.bat <vmIDtoBoot>`
 
+On linux run 
+`./reboot.sh <vmIDtoBoot>`
+
+**NOTE:** make sure ssh is among known hosts!
+
+# AutoShutdown and switch VM boot host
+Run this script in a VM to shutdown with new vm id. Read more in folder README file.
+
+On windows run `./shutdown.bat <vmIDtoBoot>`
+
+On linux run `./shutdown.sh <vmIDtoBoot>`
+
+**NOTE:** make sure ssh is among known hosts!
 
 # AutoBackup
 Run this script to download important files from proxmox. 
