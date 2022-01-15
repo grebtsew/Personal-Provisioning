@@ -17,8 +17,6 @@ On linux run ./reboot.sh <vmIDtoBoot>
 # AutoBackup
 Run this script to download important files from proxmox.
 
-
-
 # AutoSetup
 Run this script to setup an existing proxmox system.
 This is very specific for my hardware but might be useful for speedier setup!

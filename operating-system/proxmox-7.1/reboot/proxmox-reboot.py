@@ -18,7 +18,7 @@ if __name__ == "__main__":
       for vm in obj["ids"]:
         # clear onboot
         print(f"Set vm {vm} boot on start to {str(vm == argv[1])}")
-        subprocess.run(['qm', 'set',  vm, '--onboot', str(vm == argv[1])], stdout=subprocess.PIPE)
+        r = subprocess.run(['qm', 'set',  vm, '--onboot', str(vm == argv[1])], stdout=subprocess.PIPE)
     else:
       print("Id is no valid VM!")
       
