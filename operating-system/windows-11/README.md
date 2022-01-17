@@ -21,7 +21,7 @@ Set Destination in setup_workspace.ps1.
 ./uninstall.bat
 ```
 
-4. Disable autostartup in activity manager
+4. Disable auto startup in activity manager
 
 5. Go to `../../profiles` and update settings on some programs.
 

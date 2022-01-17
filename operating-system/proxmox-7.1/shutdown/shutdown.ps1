@@ -18,14 +18,15 @@ if (Get-Command 'Get-Credential' -errorAction SilentlyContinue){
  Install-Module -Name Posh-SSH # WARNING, this library might change!
 }
 
+# Get username and password for ssh/scp
 echo "Credentials"
 $credential = Get-Credential
 
-#SCP
+#SCP - send python script
 echo "SCP"
 Set-SCPItem -ComputerName $IP -Credential $credential -Destination '/' -Path './proxmox-shutdown.py'
 
-# SSH
+#SSH - run python script
 echo "SSH"
 $SSHsession=New-SSHSession -ComputerName $IP -Credential $credential -AcceptKey 
 $SSHStream = New-SSHShellStream -Index $SSHsession.SessionId
