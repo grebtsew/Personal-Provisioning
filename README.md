@@ -22,6 +22,8 @@
 
 **NOTE:** If you are installing on a system with old HDD or drives, you can store this repo there while reinstalling.
 
+**NOTE:** Always be in the folders where scripts are! For now they are linked together that way!
+
  # Operating System Status
 These tables describe which functionality currently is working on which OS.
 
@@ -75,8 +77,8 @@ These tables describe which functionality currently is working on which OS.
    <tbody>
       <tr>
          <td>Proxmox 7.1</td>
-         <td>Fail</td>
-         <td>Fail</td>
+         <td>Pass</td>
+         <td>Pass</td>
          <td>Pass</td>
       </tr>
 

@@ -4,3 +4,4 @@
 /etc/modprobe.d/blacklist.conf 
 /etc/modprobe.d/kvm.conf
 /etc/modprobe.d/kvm-intel.conf
+/etc/modules

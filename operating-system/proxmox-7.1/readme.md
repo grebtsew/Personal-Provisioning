@@ -4,6 +4,9 @@ This folder contains backups of configs needed to setup proxmox with nested virt
 Mainly for home work/gaming/coding environment with flexible reboots. This will not be useful for createing servers.
 With setup scripts and backup scripts.
 
+**NOTE:** Setup depends on Backup and Reset depends on setup!
+In order to run these script always run in the order backup -> setup -> reset.
+
 **NOTE:** No images will be stored here!
 
 **NOTE:** Remember that all settings are hardware dependent! This will probably not work on other pcs.
@@ -40,6 +43,7 @@ These files are backed up:
 /etc/modprobe.d/kvm.conf
 /etc/pve/qemu-server/*.conf
 /etc/modprobe.d/kvm-intel.conf
+/etc/modules
 ```
 
 On windows run `./backup.bat`

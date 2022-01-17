@@ -1,3 +1,4 @@
+nvidia-display-driver
 docker-desktop
 git
 discord
