@@ -1,3 +1,7 @@
+#
+# POWERSHELL auto shutdown and change boot os proxmox script
+#
+
 # Run the shutdown script on proxmox with auto shutdown change to new device
 # arg[0] = qm id to other device
 

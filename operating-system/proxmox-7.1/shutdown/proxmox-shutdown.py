@@ -1,5 +1,7 @@
 # Run this on proxmox OS
-
+"""
+This is a help program i python for safely changing boot OS on proxmox and reboot.
+"""
 import subprocess
 import json
 from sys import argv
@@ -9,7 +11,7 @@ if __name__ == "__main__":
   if len(argv) < 2:
     print("No Arguments")
   else:
-    # get all qm
+    # get all qm vm ids
     result = subprocess.run(['cat', '/etc/pve/.vmlist'], stdout=subprocess.PIPE)
     obj = json.loads(result.stdout)
     print("")

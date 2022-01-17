@@ -1,3 +1,7 @@
+#
+# BASH auto shutdown and change boot os proxmox script
+#
+
 echo "This script will shutdown pve node and auto switch os for you!"
 echo "Use <vm id> as argument!"
 IP="192.168.2.225"
