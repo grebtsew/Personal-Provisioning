@@ -1,0 +1,8 @@
+nvidia-display-driver
+docker-desktop
+git
+discord
+vlc
+ffmpeg
+github
+xcode

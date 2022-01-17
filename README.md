@@ -50,7 +50,7 @@ These tables describe which functionality currently is working on which OS.
          <td>Pass</td>
       </tr>
       <tr>
-         <td>MacOS</td>
+         <td>MacOS-High-Sierra</td>
          <td>Fail</td>
          <td>Fail</td>
          <td>Fail</td>
