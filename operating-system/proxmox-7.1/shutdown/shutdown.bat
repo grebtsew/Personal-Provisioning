@@ -1,3 +1,7 @@
+::
+:: Calling powershell script from correct folder to simplify installation
+::
+
 @echo off
 
 set install_script_path=%~dp0

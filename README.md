@@ -3,7 +3,9 @@
  If you are installing new operating systems or getting new computers often for whatever reason it is a drag 
  to always reinstall all programs and fix all settings. I created this repository to speed up the process,
  it is helpful for me, and hopefully it can be helpful for more people out there. 
- Let me know if you want more functions och have any questions.
+ Let me know if you want more functions or have any questions.
+
+ Please do add issues if you find any problems with the implementation!
 
  The folder `profile` contains profiles and settings used for different programs.
 

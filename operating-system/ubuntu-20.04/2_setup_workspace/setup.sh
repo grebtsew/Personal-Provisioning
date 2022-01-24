@@ -13,7 +13,7 @@ do
   git clone $url $curdist
 done < "./list.txt"
 
-  
+
 
 cat ./secrets.txt | while read line 
 do

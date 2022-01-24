@@ -1,4 +1,6 @@
-:: SSH into proxmox and install configs
+::
+:: Calling powershell script from correct folder to simplify process
+::
 
 @echo off
 

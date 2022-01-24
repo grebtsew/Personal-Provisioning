@@ -1,3 +1,5 @@
+#TODO: this is nice, I should try to fix this for windows 11!
+
 # Motivation : https://www.tomshardware.com/how-to/windows-10-settings-to-change
 
 # Activate darkmode

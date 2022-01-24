@@ -1,3 +1,7 @@
+#
+# POWERSHELL auto shutdown and change boot os proxmox script
+#
+
 echo "This script is for reseting own setup!"
 echo "About to reset proxmox to old config"
 
