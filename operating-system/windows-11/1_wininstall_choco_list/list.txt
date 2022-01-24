@@ -24,7 +24,7 @@ Visual Studio
 expressVPN
 bitdefenderavfree
 python3.8.9
-utorrent
+qbittorrent
 zoom
 teams
 opencv

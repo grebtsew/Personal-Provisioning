@@ -3,6 +3,11 @@
 
 $a = $args[0]
 
+if ( ([string]::IsNullOrEmpty($a)))
+{
+    $a = Read-Host "No VM id parameter added, second change to add here: (press enter to continue)"
+}
+
 echo "About to shutdown proxmox with potential id change $a"
 
 $IP="192.168.2.225"
