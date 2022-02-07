@@ -1,4 +1,10 @@
 echo "This script will reboot pve node and auto switch reboot os for you!"
+
+if [ $# -eq 0 ]; then
+    read -p 'No VM id parameter added, second change to add here: (press enter to continue): ' 1
+fi
+
+
 echo "Use <vm id> as argument!"
 IP="192.168.2.225"
 echo -n Password: 
