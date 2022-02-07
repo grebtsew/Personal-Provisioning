@@ -11,10 +11,11 @@ add-apt-repository ppa:ubuntuhandbook1/audacity
 apt-get update
 apt-get install audacity -y
 
-# teams
-wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.16851_amd64.deb
-dpkg -i teams_1.3.00.16851_amd64.deb
-rm teams_1.3.00.16851_amd64.deb
+# teams (does not work good!)
+# Checkout https://www.microsoft.com/sv-se/microsoft-teams/download-app#desktopAppDownloadregion
+#wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.16851_amd64.deb
+#dpkg -i teams_1.3.00.16851_amd64.deb
+#rm teams_1.3.00.16851_amd64.deb
 
 # zoom
 wget https://zoom.us/client/latest/zoom_amd64.deb
