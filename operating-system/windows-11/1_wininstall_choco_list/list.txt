@@ -30,3 +30,6 @@ teams
 opencv
 gstreamer
 wsl-ubuntu-2004
+filezilla
+wireshark
+freevideoeditor
