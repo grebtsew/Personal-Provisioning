@@ -1,33 +1,40 @@
 # Personal-Provisioning
- Create and store personal provisioning to optimize development and reinstallations of computers.
- If you are installing new operating systems or getting new computers often for whatever reason it is a drag 
- to always reinstall all programs and fix all settings. I created this repository to speed up the process,
- it is helpful for me, and hopefully it can be helpful for more people out there. 
- Let me know if you want more functions or have any questions.
 
- Please do add issues if you find any problems with the implementation!
+It is generally a good practice to now and then reinstall your computer OS in order to get rid of unused software and bloatwear.
+This implementation automates the process by creating and storing personal provisioning to optimize development and reinstallations of computers.
+If you are installing new operating systems or getting new computers often for whatever reason it is a drag
+to always reinstall all programs and fix all settings. I created this repository to speed up the process,
+it is helpful for me, and hopefully it can be helpful for more people out there.
+Let me know if you want more functions or have any questions.
 
- The folder `profile` contains profiles and settings used for different programs.
+![license](https://img.shields.io/github/license/grebtsew/Personal-Provisioning)
+![size](https://img.shields.io/github/repo-size/grebtsew/Personal-Provisioning)
+![commit](https://img.shields.io/github/last-commit/grebtsew/Personal-Provisioning)
 
- The folder `useful` contains useful files for any OS.
+Please do add issues if you find any problems with the implementation!
 
- # HOW-TO
+The folder `profile` contains profiles and settings used for different programs.
 
- 1. Login to github.com (Optional)
+The folder `useful` contains useful files for any OS.
 
- 2. Download repo:
- https://github.com/grebtsew/Personal-Provisioning
+# HOW-TO
 
- 3. Install for your OS, follow instructions in readme files, and take a coffee once the installations start.
+1.  Login to github.com (Optional)
 
- 4. Done! You just saved hours of setup.
+2.  Download repo: (Optionally have the project on a separate drive)
+    `https://github.com/grebtsew/Personal-Provisioning`
+
+3.  Install for your OS, follow instructions in readme files, and take a coffee once the installations start.
+
+4.  Done! You just saved hours of setup.
 
 **NOTE:** If you are installing on a system with old HDD or drives, you can store this repo there while reinstalling.
 
 **NOTE:** Always be in the folders where scripts are! For now they are linked together that way!
 
- # Operating System Status
-These tables describe which functionality currently is working on which OS.
+# Operating System Status
+
+These tables describe which functionality currently is working on which OS. The statuses means that the scripts has been tested on the os.
 
  <table>
    <thead>
@@ -41,31 +48,36 @@ These tables describe which functionality currently is working on which OS.
    <tbody>
       <tr>
          <td>Windows-11</td>
-         <td>Pass</td>
-         <td>Pass</td>
-         <td>Pass</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
       </tr>
       <tr>
          <td>Ubuntu-20.04</td>
-         <td>Pass</td>
-         <td>Pass</td>
-         <td>Pass</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
       </tr>
       <tr>
          <td>MacOS-High-Sierra</td>
-         <td>Fail</td>
-         <td>Fail</td>
-         <td>Fail</td>
+         <td><img src="https://img.shields.io/badge/Status-Fail-red" alt="Fail"></td>
+         <td><img src="https://img.shields.io/badge/Status-Fail-red" alt="Fail"></td>
+         <td><img src="https://img.shields.io/badge/Status-Fail-red" alt="Fail"></td>
       </tr>
       <tr>
          <td>Windows-10</td>
-         <td>Fail</td>
-         <td>Fail</td>
-         <td>Fail</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
       </tr>
    </tbody>
 </table>
-
 
  <table>
    <thead>
@@ -79,14 +91,13 @@ These tables describe which functionality currently is working on which OS.
    <tbody>
       <tr>
          <td>Proxmox 7.1</td>
-         <td>Pass</td>
-         <td>Pass</td>
-         <td>Pass</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
       </tr>
 
    </tbody>
 </table>
-
 
 # License
 
