@@ -1,0 +1,19 @@
+name: Linux Docker Build Test
+
+on:
+  push:
+    branches:
+      - main # Change this to the branch you want to trigger the action on
+    paths:
+      - "operating-system/linux/*" # Change this to the path of the folder you want to monitor for changes
+
+jobs:
+  build_test:
+    runs-on: ubuntu:22.04 # You can choose other runner environments if needed
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build and test Docker containers
+        run: chmod +x ./test_linux.sh && ./test_linux.sh

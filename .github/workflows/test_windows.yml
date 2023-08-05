@@ -1,0 +1,20 @@
+name: Windows Docker Build Test
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "operating-system/windows/*"
+
+jobs:
+  build_test:
+    runs-on: windows-latest # Use a Windows runner
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build and test Docker containers on Windows
+        run: |
+          .\test_windows.bat
