@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "operating-system/windows/*"
+      - "./operating-system/windows/*"
 
 jobs:
   build_test:

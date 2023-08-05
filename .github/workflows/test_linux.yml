@@ -5,7 +5,7 @@ on:
     branches:
       - main # Change this to the branch you want to trigger the action on
     paths:
-      - "operating-system/linux/*" # Change this to the path of the folder you want to monitor for changes
+      - "./operating-system/linux/*" # Change this to the path of the folder you want to monitor for changes
 
 jobs:
   build_test:
