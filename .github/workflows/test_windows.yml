@@ -1,11 +1,7 @@
 name: Windows Docker Build Test
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "./operating-system/windows/*"
+  workflow_dispatch: # Manual trigger
 
 jobs:
   build_test:
