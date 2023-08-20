@@ -33,10 +33,16 @@ sudo pacman -S vlc --noconfirm
 # spotify
 yay -S spotify --noconfirm
 
+#firewall
+sudo pacman -S ufw
+sudo ufw enable
+sudo ufw status verbose
 
 # stream
 sudo pacman -S steam --noconfirm
 
+# ssd trim
+sudo systemctl enable fstrim.timer
 
 # docker
 yay -S docker --noconfirm
