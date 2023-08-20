@@ -47,7 +47,16 @@ These tables describe which functionality currently is working on which OS. The 
    </thead>
    <tbody>
       <tr>
-         <td>Windows-11</td>
+         <td>Ubuntu-20.04</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+      </tr>
+         <tr>
+         <td>Ubuntu-22.04</td>
          <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
 </td>
          <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
@@ -56,7 +65,16 @@ These tables describe which functionality currently is working on which OS. The 
 </td>
       </tr>
       <tr>
-         <td>Ubuntu-20.04</td>
+         <td>Manjaro Linux</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+      </tr>
+      <tr>
+         <td>Garuda Linux</td>
          <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
 </td>
          <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
@@ -75,6 +93,15 @@ These tables describe which functionality currently is working on which OS. The 
          <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
          <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
          <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+      </tr>
+      <tr>
+         <td>Windows-11</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
+         <td><img src="https://img.shields.io/badge/Status-Pass-brightgreen" alt="Pass"></td>
+</td>
       </tr>
    </tbody>
 </table>

@@ -1,6 +1,9 @@
 docker build -t pp-test-ubuntu -f ./operating-system/linux/ubuntu/Dockerfile ./operating-system/linux/ubuntu/
 docker run --name pp-test-ubuntu pp-test-ubuntu
 
+docker build -t pp-test-geruda -f ./operating-system/linux/geruda/Dockerfile ./operating-system/linux/geruda/
+docker run --name pp-test-geruda pp-test-geruda
+
 docker build -t pp-test-manjaro -f ./operating-system/linux/manjaro/Dockerfile ./operating-system/linux/manjaro/
 docker run --name pp-test-manjaro pp-test-manjaro
 
